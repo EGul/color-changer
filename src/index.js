@@ -65,8 +65,8 @@
 
       var result = d;
 
-      if (two.hasOwnProperty('plus')) result = result + t.plus;
-      if (two.hasOwnProperty('minus')) result = result - t.minus;
+      if (t.hasOwnProperty('plus')) result = result + t.plus;
+      if (t.hasOwnProperty('minus')) result = result - t.minus;
 
       return result;
     }
@@ -85,7 +85,7 @@
       };
 
       if (isInRange(d, fromOpt)) {
-        toData.data[i] = setTemp(toData.data[i], toOpt.r);
+        toData.data[i] = getD(toData.data[i], toOpt.r);
         toData.data[i + 1] = getD(toData.data[i + 1], toOpt.g);
         toData.data[i + 2] = getD(toData.data[i + 2], toOpt.b);
         toData.data[i + 3] = getD(toData.data[i + 3], toOpt.a);
