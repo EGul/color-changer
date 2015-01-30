@@ -3,12 +3,18 @@
   "version": "1.0.0",
   "description": "change img element colors",
   "main": "index.js",
-  "scripts": {
-    "test": ""
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/temp-name-here/color-changer.git"
   },
+  "keywords": [
+    "img"
+    "change",
+    "color"
+  ],
   "author": "temp-name-here",
-  "license": "ISC",
-  "dependencies": {
+  "license": "MIT",
+  "devDependencies": {
     "expect.js": "^0.3.1",
     "mocha": "^2.1.0"
   }
